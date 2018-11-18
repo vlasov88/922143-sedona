@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+</head>
+<body>
+    <header class="page-header">
+        <img class="logo" src="img/logo.svg" width="140" height="71" alt="Логотип">
+        <nav>
+            <ul>
+                <li><a href="info.html">Информация</a></li>
+                <li><a href="gallery.html">Фото и видео</a></li>
+                <li><a href="map.html">Карта штата</a></li>
+                <li><a href="hotels.html">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- TODO -->
+        <h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+        <section class="advantages">
+            <h2 class="visually-hidden">Преимущества</h2>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <ol class="advantages-list">
+                <li>
+                    <h3>Настоящий городок</h3>
+                    <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+                    <img src="img/town.jpg" width="800" height="256" alt="Фото городка Седона">
+                </li>
+                <li>
+                    <h3>Там есть мост дьявола</h3>
+                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <img src="img/bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+                </li>
+                <li>
+                    <h3>Небольшая площадь</h3>
+                    <p>Все достопримечательности находятся очень близко</p>
+                </li>
+                <li>
+                    <h3>Красивая дорога</h3>
+                    <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+                </li>
+                <li>
+                    <h3>Мало туристов</h3>
+                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                </li>
+            </ol>
+        </section>
+        <section class="recommendations">
+            <h2 class="visually-hidden">Рекомендации</h2>
+            <ul>
+                <li>
+                    <h3>Жильё</h3>
+                    <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                </li>
+                <li>
+                    <h3>Еда</h3>
+                    <p>Всегда заказывайте фирменный бурген, вы не разочаруетесь!</p>
+                </li>
+                <li>
+                    <h3>Сувениры</h3>
+                    <p>Не только китайского, но и местного производства!</p>
+                </li>
+            </ul>
+        </section>
+        <section class="hotel-search">
+            <h2 class="visually-hidden">Поиск гостиницы</h2>
+            <b>Заинтересовались?</b>
+            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <button type="button">Поиск гостиницы в Седоне</button>
+            <!-- TODO Здесь будет настоящая карта -->
+            <img class="hotel-search-map" src="img/map.jpg" width="1200" height="473" alt="Карта Седоны">
+        </section>
+    </main>
+    <footer class="page-footer">
+        <p class="footer-hash-tag">#VISITSEDONA</p>
+        <div class="footer-social">
+            <ul>
+                <li><a class="social-button social-button-twitter" href="https://twitter.com">Twitter</a></li>
+                <li><a class="social-button social-button-facebook" href="https://facebook.com">Facebook</a></li>
+                <li><a class="social-button social-button-youtube" href="https://youtube.com">Youtube</a></li>
+            </ul>
+        </div>
+        <p class="footer-copyright">Websity by <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+    </footer>
+    <section class="modal modal-find-hotel">
+        <h2 class="visually-hidden">Критерии поиска гостиницы</h2>
+        <!-- Здесь будет форма -->
+    </section>
   </body>
 </html>
