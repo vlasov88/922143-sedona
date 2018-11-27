@@ -105,27 +105,33 @@
     </footer>
     <section class="modal modal-find-hotel">
         <h2 class="visually-hidden">Критерии поиска гостиницы</h2>
-        <form class="find-hotel-form" action="https://echo.htmlacademy.ru" method="GET">
+        <form class="find-hotel" action="https://echo.htmlacademy.ru" method="GET">
             <p>
                 <label>
                     Дата заезда:
-                    <input type="date" name="arrival-date" value="2017-04-24">
+                    <input class="date-field" type="text" name="arrival-date" value="24 апреля 2017">
+                    <span class="date-icon"></span>
                 </label>
             </p>
             <p>
                 <label>
                     Дата выезда:
-                    <input type="date" name="departure-date" value="2017-07-04">
+                    <input class="date-field" type="text" name="departure-date" value="4 июля 2017">
+                    <span class="date-icon"></span>
                 </label>
             </p>
             <p class="guests-info">
                 <label>
                     Взрослые:
-                    <input type="number" name="adults" value="2" min="1">
+                    <span class="plus-button"></span>
+                    <input class="number-field" type="text" name="adults" value="2">
+                    <span class="minus-button"></span>
                 </label>
                 <label>
                     Дети:
-                    <input type="number" name="children" value="0" min="0">
+                    <span class="plus-button"></span>
+                    <input class="number-field" type="text" name="children" value="0">
+                    <span class="minus-button"></span>
                 </label>
             </p>
             <button type="submit">Найти</button>
