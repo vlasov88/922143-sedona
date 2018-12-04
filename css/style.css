@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.site-navigation li {
+    list-style: none;
+}
+
+.site-navigation a {
+    line-height: 26px;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation .current {
+    color: #766357;
+}
+
+main h1{
+    font-size: 21px;
+}
+
+.advantages p {
+    font-weight: normal;
+}
+
+.hotel-search b {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.hotel-search p {
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.hotel-search button {
+    font-size: 21px;
+
+}
+
+.hotels-list-item {
+    list-style: none;
+}
+
+.hotels-list-item h3 {
+    text-align: left;
+}
+
+.hotels-list-item .hotel-link {
+    font-size: 21px;
+    color: #000000;
+}
+
+.hotels-list-item .hotel-link:hover,
+.hotels-list-item .hotel-link:focus {
+    color: #81b3d2;
+}
+
+.hotels-list-item .hotel-link:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.hotels-list-item .hotel-type,
+.hotels-list-item .price {
+    font-weight: normal;
+    line-height: 21px;
+    text-align: left;
+    color: #333333;
+}
+
+.hotels-list-item .hotel-rate {
+    font-weight: normal;
+    line-height: 21px;
+    color: #666666;
+
+    background-color: #f2f2f2;
+}
+
+
+.footer-social li {
+    list-style: none;
+}
+
+.brown-button {
+    color: #ffffff;
+
+    background-color: #766357;
+}
+
+.brown-button:hover,
+.brown-button:focus {
+    background-color: #604e43;
+}
+
+.brown-button:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #503e33;
+}
+
+.blue-button {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.blue-button:hover,
+.blue-button:focus{
+    background-color: #669ec0;
+}
+
+.blue-button:active{
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5496bd;
+}
+
+.footer-copyright {
+    font-weight: normal;
+}
+
+.footer-copyright a {
+    background-color: #231f20;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus {
+    background-color: #81b3d2;
+}
+
+.footer-copyright a:active {
+    background-color: #bdbbbc;
+}
+
+.modal-find-hotel {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
