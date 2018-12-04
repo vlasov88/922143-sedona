@@ -2,7 +2,7 @@ body {
     margin: 0;
 
     font-family: "PT Sans", Arial, sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 26px;
     color: #000000;
@@ -40,12 +40,12 @@ a {
     color: #766357;
 }
 
-main h1{
+.main-heading {
     font-size: 21px;
 }
 
 .advantages p {
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .hotel-search b {
@@ -54,7 +54,7 @@ main h1{
 }
 
 .hotel-search p {
-    font-weight: normal;
+    font-weight: 400;
     line-height: 24px;
 }
 
@@ -87,14 +87,14 @@ main h1{
 
 .hotels-list-item .hotel-type,
 .hotels-list-item .price {
-    font-weight: normal;
+    font-weight: 400;
     line-height: 21px;
     text-align: left;
     color: #333333;
 }
 
 .hotels-list-item .hotel-rate {
-    font-weight: normal;
+    font-weight: 400;
     line-height: 21px;
     color: #666666;
 
@@ -141,7 +141,7 @@ main h1{
 }
 
 .footer-copyright {
-    font-weight: normal;
+    font-weight: 400;
 }
 
 .footer-copyright a {
