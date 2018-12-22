@@ -21,7 +21,7 @@ a {
     margin: 0 auto;
 
     background-color: #ffffff;
-    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
 .logo {
@@ -44,10 +44,10 @@ a {
 }
 
 .site-navigation li {
-    width: 239px;
+    min-width: 240px;
     list-style: none;
     margin: 0;
-    padding: 20px 0;
+    padding: 0;
 }
 
 .site-navigation li:nth-child(2) {
@@ -55,6 +55,11 @@ a {
 }
 
 .site-navigation a {
+    display: block;
+    padding: 14px 72px 16px 72px;
+
+    vertical-align: middle;
+    text-align: left;
     line-height: 26px;
     color: #000000;
 
@@ -70,58 +75,148 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.site-navigation .align-right {
+    text-align: right;
+}
+
+.site-navigation .map {
+    letter-spacing: 0.5px;
+}
+
 .site-navigation .current {
     color: #766357;
 }
 
-.panorama {
+.welcome {
+    height: 508px;
     margin-bottom: 60px;
+    background-image: url("../img/intro-mask.svg"),
+    url("../img/panorama.jpg");
+    background-repeat: no-repeat,
+    no-repeat;
+    background-position: 0 451px,
+    0 0;
+    background-size: 100%,
+    auto;
+}
+
+.welcome img {
+    margin-top: 76px;
 }
 
 .main-heading {
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 
     font-size: 21px;
+    letter-spacing: 0.1px;
+}
+
+.advantages {
+    /*TODO временно для разметки*/
+    height: 1172px;
+    margin-bottom: 53px;
 }
 
 .advantages p {
     margin-bottom: 55px;
 
     font-weight: 400;
+    letter-spacing: 0.1px;
+}
+
+.block {
+    display: block;
 }
 
 .hotel-search b {
-    padding-top: 55px;
-    margin-bottom: 35px;
+    /* TODO временно, решить где лучше отступ делать */
+    /*padding-top: 40px;*/
+    margin-bottom: 24px;
 
     font-size: 30px;
     line-height: 36px;
 }
 
 .hotel-search p {
-    margin-bottom: 50px;
+    margin: 0 0 46px 0;
+    /*margin-bottom: 50px;*/
 
     font-weight: 400;
     line-height: 24px;
 }
 
-.hotel-search button {
-    font-size: 21px;
+.hotel-search-map {
+    display: block;
+}
 
+.button {
+    display: inline-block;
+    border: none;
+    min-width: 110px;
+}
+
+.hotel-search button {
+    /*TODO видимо перенести в отдельный класс button*/
+    display: inline-block;
+    width: 568px;
+    padding: 30px 0 30px 0;
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase; /* TODO Почему не сработало*/
+
+}
+
+.filter {
+    height: 303px; /** TODO временно */
+}
+
+.hotels-list ul {
+    margin: 0;
+    padding: 0;
+}
+
+.hotels-list-item {
+    border-top: 1px solid #e5e5e5;
+}
+
+.hotels-list-item:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels-list-item img {
+    display: block;
 }
 
 .hotels-list-item {
     display: flex;
+    padding: 30px 72px;
 
     list-style: none;
 }
 
 .hotels-list-item .column-2 {
     margin-right: auto;
+    padding-left: 30px;
 }
 
+
 .hotels-list-item h3 {
+    margin: -5px 0 3px 0;
+
     text-align: left;
+}
+
+.hotels-list-item p {
+    margin: 0;
+
+    text-align: left;
+}
+
+/* TODO переименовать класс, для большей специфики или класс на p */
+.column-2 p {
+    margin-bottom: 12px;
 }
 
 .hotels-list-item .hotel-link {
@@ -147,11 +242,87 @@ a {
 }
 
 .hotels-list-item .hotel-rate {
+    margin-right: 1px;
+    padding: 3px 12px 3px 15px;
+
     font-weight: 400;
     line-height: 21px;
     color: #666666;
 
     background-color: #f2f2f2;
+}
+
+.hotels-list-item .hotel-class {
+    width: 110px;
+    margin-top: -1px;
+
+    font-size: 0;
+}
+
+.hotel-type {
+    display: inline-block;
+    width: 110px;
+}
+
+.hotels-list-item .hotel-class {
+    margin-bottom: 38px;
+}
+
+.hotel-class-2 {
+    background-image:
+        url("../img/star.svg"),
+        url("../img/star.svg");
+    background-size:
+        18px 17px,
+        18px 17px;
+    background-repeat:
+        no-repeat,
+        no-repeat;
+    background-position:
+        right top,
+        right 23px  top 0;
+}
+
+.hotel-class-3 {
+    background-image:
+        url("../img/star.svg"),
+        url("../img/star.svg"),
+        url("../img/star.svg");
+    background-size:
+        18px 17px,
+        18px 17px,
+        18px 17px;
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position:
+        right top,
+        right 23px  top 0,
+        right 47px  top 0;
+}
+
+.hotel-class-4 {
+    background-image:
+        url("../img/star.svg"),
+        url("../img/star.svg"),
+        url("../img/star.svg"),
+        url("../img/star.svg");
+    background-size:
+        18px 17px,
+        18px 17px,
+        18px 17px,
+        18px 17px;
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position:
+        right top,
+        right 23px  top 0,
+        right 48px  top 0,
+        right 72px  top 0;
 }
 
 .brown-button {
@@ -178,49 +349,83 @@ a {
 }
 
 .blue-button:hover,
-.blue-button:focus{
+.blue-button:focus {
     background-color: #669ec0;
 }
 
-.blue-button:active{
+.blue-button:active {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #5496bd;
 }
+
 .page-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 36px 0;
 }
 
-.footer-hash-tag,
-.footer-copyright {
-    width: 220px;
+.footer-hash-tag {
+    margin: 10px 0 0 80px;
+    width: 240px;
+
+    font-size: 21px;
 }
 
 .footer-social ul {
+    display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
+    width: 150px;
 }
 
 .footer-social li {
     list-style: none;
 }
 
+.social-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+}
+
 .footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    margin: 0 80px 0 0;
+    width: 238px;
+
     font-weight: 400;
 }
 
+.footer-copyright p {
+    margin-top: 10px;
+    margin-right: 9px;
+}
+
 .footer-copyright a {
-    background-color: #231f20;
+    margin-top: 3px;
 }
 
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-    background-color: #81b3d2;
+.footer-copyright svg {
+    display: block;
 }
 
-.footer-copyright a:active {
-    background-color: #bdbbbc;
+.footer-copyright path {
+    fill: #231f20;
+}
+
+.footer-copyright a:hover path,
+.footer-copyright a:focus path {
+    fill: #81b3d2;
+}
+
+.footer-copyright a:active path {
+    fill: #bdbbbc;
 }
 
 .modal-find-hotel {
@@ -236,4 +441,4 @@ a {
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
-  }
+}
