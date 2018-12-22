@@ -152,7 +152,6 @@ a {
 .button {
     display: inline-block;
     border: none;
-    min-width: 110px;
 }
 
 .hotel-search button {
@@ -190,6 +189,12 @@ a {
     border-bottom: 1px solid #e5e5e5;
 }
 
+.hotels-list-item p {
+    margin: 0;
+
+    text-align: left;
+}
+
 .hotel-item-colum-1 {
     padding-top: 5px;
 }
@@ -203,44 +208,48 @@ a {
     padding-left: 30px;
 }
 
-.hotels-list-item h3 {
+.hotel-item-colum-2 h3 {
     margin: 0 0 3px 0;
 
     text-align: left;
 }
 
-.hotels-list-item p {
-    margin: 0;
-
-    text-align: left;
-}
-
-/* TODO переименовать класс, для большей специфики или класс на p */
-.column-2 p {
+.hotel-item-colum-2 p {
     margin-bottom: 12px;
 }
 
-.hotels-list-item .hotel-link {
+.hotel-item-colum-2 .hotel-link {
     font-size: 21px;
     color: #000000;
 }
 
-.hotels-list-item .hotel-link:hover,
-.hotels-list-item .hotel-link:focus {
+.hotel-item-colum-2 .hotel-link:hover,
+.hotel-item-colum-2 .hotel-link:focus {
     color: #81b3d2;
 }
 
-.hotels-list-item .hotel-link:active {
+.hotel-item-colum-2 .hotel-link:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.hotels-list-item .hotel-type,
-.hotels-list-item .price {
+.hotel-item-colum-2 .hotel-type,
+.hotel-item-colum-2 .price {
     font-weight: 400;
     line-height: 21px;
     text-align: left;
     color: #333333;
 }
+
+.hotel-item-colum-2 .button {
+    padding: 3px 17px 3px 16px;
+
+    line-height: 21px;
+}
+
+.hotel-item-colum-2 .button:not(:last-child) {
+    margin-right: 3px;
+}
+
 
 .hotel-item-colum-3 {
     padding-top: 4px;
@@ -267,6 +276,7 @@ a {
 .hotel-type {
     display: inline-block;
     width: 110px;
+    padding-right: 2px;
 }
 
 .hotels-list-item .hotel-class {
