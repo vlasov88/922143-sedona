@@ -32,7 +32,8 @@
     </header>
     <main>
         <section class="welcome">
-            <img src="./img/intro-welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. 'Because the Grand Canyon sucks!'">
+            <img src="./img/intro-welcome.svg" width="458" height="352"
+                 alt="Welcome to the gorgeous Sedona. 'Because the Grand Canyon sucks!'">
         </section>
         <h1 class="main-heading">Седона — небольшой городок в аризоне,
             <br>заслуживающий большего!
@@ -134,34 +135,32 @@
     <h2 class="visually-hidden">Критерии поиска гостиницы</h2>
     <form class="find-hotel" action="https://echo.htmlacademy.ru" method="GET">
         <p>
-            <label>
-                Дата заезда:
-                <input class="date-field" type="text" name="arrival-date" value="24 апреля 2017">
-                <button class="date-picker" type="button"></button>
-            </label>
+            <label for="arrival-date">Дата заезда:</label>
+            <input id="arrival-date" class="date-field" type="text" name="arrival-date" value="24 апреля 2017">
+            <button class="date-picker" type="button">Открыть календарь</button>
         </p>
         <p>
-            <label>
-                Дата выезда:
-                <input class="date-field" type="text" name="departure-date" value="4 июля 2017">
-                <button class="date-picker" type="button">Открыть календарь</button>
-            </label>
+            <label for="departure-date">Дата выезда:</label>
+            <input id="departure-date" class="date-field" type="text" name="departure-date" value="4 июля 2017">
+            <button class="date-picker" type="button">Открыть календарь</button>
         </p>
         <p class="guests-info">
-            <label>
-                Взрослые:
-                <button class="plus-button" type="button">Увеличить</button>
-                <input class="number-field" type="text" name="adults" value="2">
-                <button class="minus-button" type="button">Уменьшить</button>
-            </label>
-            <label>
-                Дети:
-                <button class="plus-button" type="button">Увеличить</button>
-                <input class="number-field" type="text" name="children" value="0">
-                <button class="minus-button" type="button">Уменьшить</button>
-            </label>
+            <label for="adults">Взрослые:</label>
+            <span class="sub-column">
+                <span class="number-input">
+                    <button class="minus-button" type="button">-</button>
+                    <input id="adults" class="number-field" type="text" name="adults" value="2">
+                    <button class="plus-button" type="button">+</button>
+                </span>
+                <label class="children-label" for="children">Дети:</label>
+                <span class="number-input">
+                    <button class="minus-button" type="button">-</button>
+                    <input id="children" class="number-field" type="text" name="children" value="0">
+                    <button class="plus-button" type="button">+</button>
+                </span>
+            </span>
         </p>
-        <button type="submit">Найти</button>
+        <button class="button" type="submit">Найти</button>
     </form>
 </section>
 </body>
