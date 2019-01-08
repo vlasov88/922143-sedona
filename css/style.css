@@ -90,6 +90,7 @@ a {
 .welcome {
     height: 508px;
     margin-bottom: 60px;
+    background-color: #ddeaf3;
     background-image: url("../img/intro-mask.svg"),
     url("../img/panorama.jpg");
     background-repeat: no-repeat,
@@ -105,7 +106,10 @@ a {
 }
 
 .main-heading {
+    margin-right: auto;
     margin-bottom: 28px;
+    margin-left: auto;
+    width: 500px;
 
     font-size: 21px;
     letter-spacing: 0.1px;
@@ -383,7 +387,7 @@ a {
     font-size: 21px;
 }
 
-.footer-social ul {
+.footer-social {
     display: flex;
     justify-content: space-between;
     padding: 0;
@@ -418,7 +422,7 @@ a {
     margin-right: 9px;
 }
 
-.footer-copyright a {
+.footer-copyright-linkwelcome {
     margin-top: 3px;
 }
 
@@ -430,12 +434,12 @@ a {
     fill: #231f20;
 }
 
-.footer-copyright a:hover path,
-.footer-copyright a:focus path {
+.footer-copyright-link:hover path,
+.footer-copyright-link:focus path {
     fill: #81b3d2;
 }
 
-.footer-copyright a:active path {
+.footer-copyright-link:active path {
     fill: #bdbbbc;
 }
 
@@ -504,7 +508,7 @@ a {
 }
 
 .find-hotel .guests-info {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
 }
 
 .find-hotel .sub-column {
@@ -530,14 +534,36 @@ a {
     width: 38px;
     height: 38px;
     margin: 0;
+    padding: 6px 0 6px 0;
+
+    text-align: center;
 
     background-color: #f2f2f2;
     border: none;
 }
 
+
+
+.number-input button {
+    padding-top: 2px;
+
+    font-size: 26px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.number-input button:hover,
+.number-input button:focus {
+    color: #000000;
+}
+
+.number-input button:active {
+    color: #81b3d2;
+}
+
 .find-hotel .button {
     width: 100%;
-    padding: 13px 0 20px 0;
+    padding: 16px 0 16px 0;
 
     font-size: 21px;
     line-height: 26px;
