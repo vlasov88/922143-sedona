@@ -115,21 +115,178 @@ a {
     letter-spacing: 0.1px;
 }
 
-.advantages {
-    /*TODO временно для разметки*/
-    height: 1172px;
-    margin-bottom: 53px;
-}
-
-.advantages p {
+.advantages-and-recommendations p {
+    margin-right: auto;
     margin-bottom: 55px;
+    margin-left: auto;
 
+    line-height: 21px;
     font-weight: 400;
     letter-spacing: 0.1px;
 }
 
+.advantage-row {
+    display: flex;
+}
+
+.advantage {
+    width: 400px;
+    padding: 47px 45px 0 45px;
+}
+
+.advantage h3,
+.advantage p {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+.advantage h3 {
+    width: 160px;
+    margin-bottom: 24px;
+
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.advantage p {
+    margin-bottom: 21px;
+}
+
+.advantage p:last-child {
+    margin-bottom: 59px;
+}
+
+.blue-advantage {
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.gray-advantage {
+    background-color: #eeeeee;
+}
+
+.recommendations-row {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.recommendations-row li {
+    width: 400px;
+    margin-top: 55px;
+}
+
+.icon {
+    position: relative;
+
+    padding-top: 106px;
+}
+
+.icon:before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 400px;
+    height: 100px;
+
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.advantage .counter {
+    position: relative;
+
+    padding-bottom: 42px;
+}
+
+.advantage .counter:after {
+    position: absolute;
+    top: 66px;
+    left: 0;
+
+    height: 21px;
+    width: 160px;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.advantage .counter-1:after {
+    content:"— №1 —"
+}
+
+.advantage .counter-2:after {
+    content:"— №2 —"
+}
+
+.advantage .counter-3:after {
+    content:"— №3 —"
+}
+
+.advantage .counter-4:after {
+    content:"— №4 —"
+}
+
+.advantage .counter-5:after {
+    content:"— №5 —"
+}
+
+.recommendations-row h3 {
+    margin: 0 0 24px 0;
+}
+
+.recommendations-row p {
+    margin-bottom: 82px;
+}
+
+.appartments:before {
+    background-image: url("../img/appartments.svg");
+    background-position-y: 5px;
+}
+
+.food:before {
+    background-image: url("../img/food.svg");
+    background-position-y: 6px;
+}
+
+.souvenirs:before {
+    background-image: url("../img/souvenirs.svg");
+    background-position-y: 1px;
+}
+
+.recommendations-row h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.column-1 p {
+    width: 255px;
+}
+
+.column-2 p {
+    width: 288px;
+}
+
+.column-3 p {
+    width: 275px;
+}
+
 .block {
     display: block;
+}
+
+.hotel-search {
+    padding-top: 50px;
 }
 
 .hotel-search b {
