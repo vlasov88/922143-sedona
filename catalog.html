@@ -88,37 +88,39 @@
             </section>
             <section class="hotels-list">
                 <h2 class="visually-hidden">Результаты поиска</h2>
-                <div>
+                <div class="sort-block">
                     <p>Найдено: 3</p>
-                    <fieldset>
-                        <legend>Сортировка:</legend>
-                        <ul>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-input-radio" type="radio" name="sort-group" value="price" id="filter-price">
-                                <label for="filter-price">по цене</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-input-radio" type="radio" name="sort-group" value="type" id="filter-type" checked>
-                                <label for="filter-care">по типу</label>
-                            </li>
-                            <li class="filter-option">
-                                <input class="visually-hidden filter-input-radio" type="radio" name="sort-group" value="rate" id="filter-rate">
-                                <label for="filter-rate">по рейтингу</label>
-                            </li>
-                        </ul>
-                        <fieldset>
-                            <legend class="visually-hidden">Направление сортировки:</legend>
-                            <ul>
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-direction-group" value="up" id="filter-shave">
-                                    <label for="filter-shave">по возрастанию</label>
+                    <fieldset class="sort-filter">
+                        <div class="sort-filter-container">
+                            <legend class="sort-filter-legend">Сортировка:</legend>
+                            <ul class="sort-options">
+                                <li class="sort-option">
+                                    <input class="visually-hidden filter-input-radio" type="radio" name="sort-group" value="price" id="filter-price" checked>
+                                    <label for="filter-price">по цене</label>
                                 </li>
-                                <li class="filter-option">
-                                    <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-direction-group" value="down" id="filter-care" checked>
-                                    <label for="filter-care">по убыванию</label>
+                                <li class="sort-option">
+                                    <input class="visually-hidden filter-input-radio" type="radio" name="sort-group" value="type" id="filter-type">
+                                    <label for="filter-type">по типу</label>
+                                </li>
+                                <li class="sort-option">
+                                    <input class="visually-hidden filter-input-radio" type="radio" name="sort-group" value="rate" id="filter-rate">
+                                    <label for="filter-rate">по рейтингу</label>
                                 </li>
                             </ul>
-                        </fieldset>
+                            <fieldset class="sort-directions">
+                                <legend class="visually-hidden">Направление сортировки:</legend>
+                                <ul>
+                                    <li>
+                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-direction-group" value="up" id="filter-up">
+                                        <label for="filter-up">по возрастанию</label>
+                                    </li>
+                                    <li>
+                                        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="sort-direction-group" value="down" id="filter-down" checked>
+                                        <label for="filter-down">по убыванию</label>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </div>
                     </fieldset>
                 </div>
                 <ul>

@@ -548,6 +548,81 @@ a {
     background: #ffffff;
 }
 
+.sort-block {
+    display: flex;
+
+    margin: 30px 0 0 71px;
+
+    text-align: left;
+}
+
+.sort-block p {
+    margin: 0;
+
+    font-size: 21px;
+}
+
+.sort-filter {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+
+    border: none;
+}
+
+.sort-filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6px;
+    margin-left: 48px;
+}
+
+.sort-filter-legend {
+    margin-right: 40px;
+}
+
+.sort-options {
+    display: flex;
+}
+
+.filter-input-radio + label {
+    color: rgba(0, 0, 0, 0.3);
+
+    border-bottom: dotted 1px #81b3d2;
+}
+
+.filter-input-radio:checked + label {
+    color: #81b3d2;
+
+    border: none;
+}
+
+.filter-input-radio + label:hover,
+.filter-input-radio + label:focus {
+    color: #81b3d2;
+}
+
+.filter-input-radio + label:active {
+    color: #000000;
+
+    border: none;
+}
+
+.sort-option {
+    margin: 0 33px 0 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.sort-directions {
+    margin-left: auto;
+}
+
 .hotels-list ul {
     margin: 0;
     padding: 0;
