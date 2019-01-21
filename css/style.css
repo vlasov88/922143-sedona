@@ -373,6 +373,8 @@ a {
 }
 
 .filter-option {
+    position: relative;
+
     list-style: none;
     margin-bottom: 25px;
     padding-left: 40px;
@@ -380,6 +382,34 @@ a {
 
 .filter-option:last-child {
     margin-bottom: 31px;
+}
+
+.filter-input-checkbox + label::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 1px;
+
+    width: 23px;
+    height: 23px;
+
+    background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::before {
+    width: 27px;
+
+    background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-input-checkbox:disabled + label::before {
+    background-image: url("../img/checkbox-off-diabled.svg");
+}
+
+.filter-input-checkbox:checked:disabled + label::before {
+    background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .filter-range {
@@ -486,10 +516,6 @@ a {
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
-}
-
-.range-toggle:hover {
-    background: #1c4f80;
 }
 
 .range-toggle-min {
