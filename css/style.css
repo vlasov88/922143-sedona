@@ -25,6 +25,10 @@ a {
     box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
+.page-header {
+    position: relative;
+}
+
 .logo {
     position: absolute;
     left: 50%;
@@ -310,17 +314,22 @@ a {
     line-height: 24px;
 }
 
+.modal-holder {
+    position: relative;
+}
+
 .hotel-search-map {
     display: block;
 }
 
 .button {
     display: inline-block;
+    vertical-align: top;
+
     border: none;
 }
 
 .hotel-search button {
-    display: inline-block;
     width: 568px;
     padding: 30px 0 30px 0;
 
@@ -421,6 +430,10 @@ a {
 
 .filter-input-checkbox:checked:disabled + label::before {
     background-image: url("../img/checkbox-on-disabled.svg");
+}
+
+.filter-input-checkbox:focus + label {
+    outline: #81b3d2 solid 1px;
 }
 
 .filter-range {
@@ -625,12 +638,16 @@ a {
     border: none;
 }
 
-.filter-input-radio + label:hover,
-.filter-input-radio + label:focus {
+.filter-input-radio:hover + label,
+.filter-input-radio:focus + label {
     color: #81b3d2;
 }
 
-.filter-input-radio + label:active {
+.filter-input-radio:focus + label {
+    outline: #81b3d2 solid 1px;
+}
+
+.filter-input-radio:active + label {
     color: #000000;
 
     border: none;
@@ -817,6 +834,7 @@ a {
 
 .hotel-type {
     display: inline-block;
+    vertical-align: top;
     width: 110px;
     padding-right: 2px;
 }
@@ -1007,7 +1025,7 @@ a {
 .modal-find-hotel {
     position: absolute;
     width: 458px;
-    top: 2169px;
+    top: 0;
     left: 50%;
     margin-left: -284px;
     padding: 55px 55px 55px 55px;
@@ -1022,9 +1040,7 @@ a {
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
